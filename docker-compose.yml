@@ -1,0 +1,10 @@
+version: '2.2'
+
+services:
+  creator_c:
+    image: chatster/api-creator-c
+    build: .
+    container_name: creator_c
+    ports:
+      - 8000:8000
+      - 2990:2990
